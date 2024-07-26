@@ -1,4 +1,79 @@
-# Customized-LLM-APP
+# Architecture Mate Chatbot
+
+## Overview
+
+The "Architecture Mate" chatbot is designed to assist users with architectural design queries, providing guidance on various aspects of architecture, including design principles, materials, styles, and construction techniques. It aims to be a helpful companion for architects, students, and enthusiasts.
+
+## Features
+
+- **Design Principles**: Offers information on key architectural design principles.
+- **Material Guidance**: Provides insights on different construction materials and their uses.
+- **Style Exploration**: Helps users explore various architectural styles and their characteristics.
+- **Construction Techniques**: Explains common construction techniques and best practices.
+- **User-Friendly Interface**: Intuitive chatbot interface built with Gradio.
+
+## Installation
+
+1. **Clone the repository**:
+    ```sh
+    git clone <repo-url>
+    cd <repo-directory>
+    ```
+
+2. **Create and activate a virtual environment**:
+    ```sh
+    python3 -m venv env
+    source env/bin/activate
+    ```
+
+3. **Install the required dependencies**:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+1. **Run the chatbot**:
+    ```sh
+    python app.py
+    ```
+
+2. **Interact with the chatbot**:
+    - Open your web browser and go to the local URL provided by Gradio.
+    - Start asking questions about architecture to get detailed responses.
+
+## Project Structure
+
+- `app.py`: The main application file that contains the code for the chatbot.
+- `requirements.txt`: The file containing the required Python packages.
+
+## Example Questions
+
+- "What are the principles of sustainable architecture?"
+- "Can you explain the characteristics of Gothic architecture?"
+- "What are the best materials for eco-friendly buildings?"
+- "How do I design a space with good natural lighting?"
+- "What are some modern construction techniques?"
+
+## Customization
+
+- **System Message**: Modify the initial system message in `app.py` to change the chatbot's introduction and purpose.
+- **Parameters**: Adjust the `max_tokens`, `temperature`, and `top_p` sliders in the Gradio interface to customize the chatbot's responses.
+
+## Dependencies
+
+- `gradio`: For creating the web interface.
+- `huggingface_hub`: For interfacing with the Hugging Face Inference API.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Acknowledgments
+
+- [Hugging Face](https://huggingface.co/) for providing the Inference API.
+- [Gradio](https://www.gradio.app/) for the user-friendly web interface.
+
 
 Building a Retrieval-Augmented Generation (RAG) bot can significantly enhance the capabilities of a language model by incorporating external knowledge to generate more accurate and contextually relevant responses. This guide will walk you through creating a simple RAG bot using Gradio and the Hugging Face APIs.
 
